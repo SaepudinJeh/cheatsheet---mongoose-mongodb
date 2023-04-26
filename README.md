@@ -14,3 +14,13 @@
       { new: true }
   )
 ````
+
+---
+> Example push object in array
+```Javascript
+  const addPayment = await this.methodPaymentModel.findOneAndUpdate(
+      { account },
+      { $push: { paypal: data } },
+      { upsert: true, new: true }
+  )
+````
