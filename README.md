@@ -28,10 +28,12 @@
 ---
 > Example dinamic search
 ```Javascript
+ const payload: string = "search";
+
   const optionSearch = {
       $or: [
-          { businessName: new RegExp(search?.search?.toString(), 'i') },
-          { businessAddress: new RegExp(search?.search?.toString(), 'i') },
+          { businessName: new RegExp(search?.toString(), 'i') },
+          { businessAddress: new RegExp(search?.toString(), 'i') },
       ]
   }
 
