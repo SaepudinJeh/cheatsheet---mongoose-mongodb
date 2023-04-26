@@ -2,7 +2,7 @@
 
 ---
 > Update object in array
-```Typescript
+```Javascript
   const updatePaypal = await this.methodPaymentModel.findOneAndUpdate(
       { account, 
           $or: [
