@@ -1,7 +1,7 @@
 #### Contains a collection of previously worked on Mongoose/MongoDB cheat sheets
 
 ---
-> Update object in array
+> Example Update object in array
 ```Javascript
   const updatePaypal = await this.methodPaymentModel.findOneAndUpdate(
       { account, 
