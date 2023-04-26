@@ -24,3 +24,16 @@
       { upsert: true, new: true }
   )
 ````
+
+---
+> Example dinamic search
+```Javascript
+  const optionSearch = {
+      $or: [
+          { businessName: new RegExp(search?.search?.toString(), 'i') },
+          { businessAddress: new RegExp(search?.search?.toString(), 'i') },
+      ]
+  }
+
+  const results = await this.kycBusinessModel.find({ ...optionSearch });
+````
